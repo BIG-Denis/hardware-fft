@@ -6,26 +6,24 @@ This repository will contain **parametrized** **pipelined** SystemVerilog implem
 
 Due to project's high complexity progress has been splitted into multiple sequential steps.
 
-1. ⏳ **Vector rotation operator int8** - architecture and realisation  
-The main thing in hardware FFT is and vector rotation operator that must be parametrized good enough to comply with giant FFT`s. First step is to make it for ite int8 data type - easiest one.  
-2. 🗓️ **Radix-2 butterfly int8** - architecture and realisation  
-Next part is a core unit opeation in FFT's - butterfly, which is basically adder, substractor and vector rotation.  
-3. 🗓️ **Vector rotation operator int (any width)** - architecture and realisation  
+1. ⏳ **Vector rotation operator int** - architecture and realisation  
 Improving int8 vector rotation operator to work with integers of any width.  
-4. 🗓️ **Radix-2 butterfly int (any width)** - architecture and realisation  
+2. 🗓️ **Radix-2 butterfly int** - architecture and realisation  
 Improving int8 butterfly to work with integers of any width.  
 At this point this would be a MVP.  
-5. 🗓️ **Width-parametrized FFT calculation graph** - realisation  
+3. 🗓️ **Width-parametrized FFT calculation graph** - realisation  
 Writing a parametrized size full calculation graph combining all done modules for int FFT.  
-6. 🗓️ **Vector rotation operator float point** - architecture and realisation  
+4. 🗓️ **Vector rotation operator float point** - architecture and realisation  
 Improving vector rotation operator to work with float point data types.  
-7. 🗓️ **Radix-2 butterfly float point** - architecture and realisation  
+5. 🗓️ **Radix-2 butterfly float point** - architecture and realisation  
 Improving int-only butterfly to work with float point data types.  
-8. 🗓️ **DataType-parametrized FFT calculation graph** - realisation  
+6. 🗓️ **DataType-parametrized FFT calculation graph** - realisation  
 Parametrizing whole top module to be able to choose data type as module parameter.  
-9. 🗓️ **Inverse Fast Fourier transform** - realisation  
+7. 🗓️ **Inverse Fast Fourier transform** - realisation  
 Simply rewriting calculation graph to get IFFT algorithm.  
 
 > ✅ - done  
 > ⏳ - work in progress  
 > 🗓️ - planned  
+
+Documentation is going to be updating as new parts of project will be completed.  

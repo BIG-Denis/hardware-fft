@@ -7,12 +7,12 @@ This repository will contain **parametrized** **pipelined** SystemVerilog implem
 Due to project's high complexity progress has been splitted into multiple sequential steps.
 
 1. ⏳ **Vector rotation operator int** - architecture and realisation  
-Improving int8 vector rotation operator to work with integers of any width.  
+The main thing in hardware FFT is and vector rotation operator that must be parametrized good enough to comply with FFT`s of any size. First step is to make it for the int data type - easiest one.  
 2. 🗓️ **Radix-2 butterfly int** - architecture and realisation  
-Improving int8 butterfly to work with integers of any width.  
-At this point this would be a MVP.  
+Next part is a core unit opeation in FFT's - butterfly, which is basically adder, substractor and vector rotation.  
 3. 🗓️ **Width-parametrized FFT calculation graph** - realisation  
 Writing a parametrized size full calculation graph combining all done modules for int FFT.  
+At this point this would be a MVP.  
 4. 🗓️ **Vector rotation operator float point** - architecture and realisation  
 Improving vector rotation operator to work with float point data types.  
 5. 🗓️ **Radix-2 butterfly float point** - architecture and realisation  
